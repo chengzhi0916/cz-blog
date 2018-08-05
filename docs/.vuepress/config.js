@@ -8,7 +8,7 @@ const getPath = path => {
 }
 
 module.exports = {
-  //base: '/cz-blog/',
+  base: '/cz-blog/',
   title: '岁月留痕',
   description: '记录编程之路的点点滴滴',
   // dev 模式下不显示 favicon？
@@ -36,13 +36,13 @@ module.exports = {
     // 如果定义了下面的 sidebarDepth 属性为 2，就显示三级标题
     // 所有在 sidebar 中定义的文章
     // 在页面底部都会显示上一篇/下一篇 sidebar 中文章的链接
-   /*  sidebar: [
+     sidebar: [
       {
         title: '学习笔记',
-        children: getPath('book'),
+        //children: getPath('book'),
       },
       {
-        title: 'JS学习方法论',
+        /* title: 'JS学习方法论',
         children: getPath('how-to-learn-js'),
       },
       {
@@ -76,8 +76,8 @@ module.exports = {
       {
         title: 'Git',
         children: getPath('git'),
-      },
-    ], */
+      },*/
+    ], 
     sidebarDepth: 2,
   },
   markdown: {
