@@ -39,10 +39,10 @@ module.exports = {
      sidebar: [
       {
         title: '学习笔记',
-        //children: getPath('book'),
+        children: getPath('weekly-summary'),
       },
-      {
-        /* title: 'JS学习方法论',
+      /* {
+        title: 'JS学习方法论',
         children: getPath('how-to-learn-js'),
       },
       {
