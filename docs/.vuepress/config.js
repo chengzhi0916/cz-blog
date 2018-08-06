@@ -9,7 +9,7 @@ const getPath = path => {
 
 module.exports = {
   base: '/cz-blog/',
-  title: '岁月留痕',
+  title: '精彩人生',
   description: '记录编程之路的点点滴滴',
   // dev 模式下不显示 favicon？
   head: [
@@ -17,13 +17,15 @@ module.exports = {
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
   ],
   themeConfig: {
-    repo: 'Dream4ever/JavaScript',
-    // editLinks: true,
-    // editLinkText: '在 GitHub 上编辑此页面',
+    repo: 'chengzhi0916/cz-blog',
+    //editLinks: true,
+    //editLinkText: '在 GitHub 上编辑此页面',
     lastUpdated: '最后更新于',
     // 设置了上面的 repo 之后，顶部导航栏默认会显示 GitHub 链接
     // 无需在 nav 中再专门设置
     nav: [
+      { text: 'Home', link: '/' },
+   
       // {
       //   text: '博客',
       //   link: '/index/index',
@@ -36,12 +38,14 @@ module.exports = {
     // 如果定义了下面的 sidebarDepth 属性为 2，就显示三级标题
     // 所有在 sidebar 中定义的文章
     // 在页面底部都会显示上一篇/下一篇 sidebar 中文章的链接
-     sidebar: [
+    
+    sidebar: [
+
       {
         title: '学习笔记',
-        children: getPath('weekly-summary'),
+        children: getPath('4'),
       },
-      /* {
+    /*  {
         title: 'JS学习方法论',
         children: getPath('how-to-learn-js'),
       },
@@ -76,11 +80,11 @@ module.exports = {
       {
         title: 'Git',
         children: getPath('git'),
-      },*/
-    ], 
-    sidebarDepth: 2,
+      }, */
+    ],     sidebarDepth: 1,
   },
+ 
   markdown: {
     lineNumbers: true
-  }
-}
+  } 
+} 
