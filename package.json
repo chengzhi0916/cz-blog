@@ -6,11 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "vuepress build docs",
+    "docs:deploy": "yubisaki deploy -u bloss -p docs -r bloss.github.io"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dream4ever/JavaScript.git"
+    "url": "git+https://github.com/chengzhi0916/cz-blog"
   },
   "keywords": [
     "javascript"
@@ -18,9 +19,9 @@
   "author": "He Wei",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Dream4ever/JavaScript/issues"
+    "url": "https://github.com/chengzhi0916/cz-blog/issues"
   },
-  "homepage": "https://github.com/Dream4ever/JavaScript#readme",
+  "homepage": "https://github.com/chengzhi0916/cz-blog#readme",
   "devDependencies": {},
   "dependencies": {
     "vuepress": "^0.13.0",
