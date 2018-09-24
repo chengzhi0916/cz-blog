@@ -1,30 +1,34 @@
 {
-  "name": "cz-blog",
+  "name": "blog",
   "version": "1.0.0",
   "description": "my blog",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
-    "docs:deploy": "yubisaki deploy -u bloss -p docs -r bloss.github.io"
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "deploy": "bash deploy.sh",
+    "new": "yubisaki post -p docs/blog --page"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chengzhi0916/cz-blog"
+    "url": "git+https://github.com/lewiscutey/vuepress-template.git"
   },
   "keywords": [
-    "javascript"
+    "vuepress",
+    "vuepress-template",
+    "vuepress-theme",
+    "vuepress-theme-yubisaki"
   ],
-  "author": "He Wei",
+  "author": "lewis",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chengzhi0916/cz-blog/issues"
+    "url": "https://github.com/lewiscutey/vuepress-template/issues"
   },
-  "homepage": "https://github.com/chengzhi0916/cz-blog#readme",
-  "devDependencies": {},
+  "homepage": "https://github.com/lewiscutey/vuepress-template#readme",
   "dependencies": {
-    "vuepress": "^0.13.0",
-    "webpack-serve": "^0.3.2"
+    "markdown-it-imsize": "^2.0.1",
+    "markdown-it-task-lists": "^2.1.1",
+    "vuepress": "^0.14.2",
+    "vuepress-theme-yubisaki": "^3.0.2"
   }
 }
